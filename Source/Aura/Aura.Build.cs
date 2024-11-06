@@ -1,4 +1,4 @@
-// Copyright Sky Games
+// Copyright Alex Walker'GD
 
 using UnrealBuildTool;
 
