@@ -7,8 +7,10 @@
 // IWYU pragma: private, include "AbilitySystem/AuraAttributeSet.h"
 #include "UObject/ObjectMacros.h"
 #include "UObject/ScriptMacros.h"
+#include "Net/Core/PushModel/PushModelMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FGameplayAttributeData;
 #ifdef AURA_AuraAttributeSet_generated_h
 #error "AuraAttributeSet.generated.h already included, missing '#pragma once' in AuraAttributeSet.h"
 #endif
@@ -17,7 +19,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_SPARSE_DATA
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnRep_MaxMana); \
+	DECLARE_FUNCTION(execOnRep_Mana); \
+	DECLARE_FUNCTION(execOnRep_MaxHealth); \
+	DECLARE_FUNCTION(execOnRep_Health);
+
+
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_INCLASS_NO_PURE_DECLS \
 private: \
@@ -25,12 +34,22 @@ private: \
 	friend struct Z_Construct_UClass_UAuraAttributeSet_Statics; \
 public: \
 	DECLARE_CLASS(UAuraAttributeSet, UAttributeSet, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/Aura"), NO_API) \
-	DECLARE_SERIALIZER(UAuraAttributeSet)
+	DECLARE_SERIALIZER(UAuraAttributeSet) \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		Health=NETFIELD_REP_START, \
+		MaxHealth, \
+		Mana, \
+		MaxMana, \
+		NETFIELD_REP_END=MaxMana	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
+private: \
+	REPLICATED_BASE_CLASS(UAuraAttributeSet) \
+public:
 
 
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UAuraAttributeSet(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UAuraAttributeSet(UAuraAttributeSet&&); \
@@ -38,7 +57,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UAuraAttributeSet); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAuraAttributeSet); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAuraAttributeSet) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UAuraAttributeSet) \
 	NO_API virtual ~UAuraAttributeSet();
 
 
