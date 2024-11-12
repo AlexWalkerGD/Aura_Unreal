@@ -23,5 +23,5 @@ public:
 	virtual void UnHighlightActor() override;
 
 protected:
-	virtual void BeginDestroy() override;
+	virtual void BeginPlay() override;
 };

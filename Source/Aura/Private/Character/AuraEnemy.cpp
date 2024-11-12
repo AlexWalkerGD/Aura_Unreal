@@ -32,9 +32,9 @@ void AAuraEnemy::UnHighlightActor()
 	Weapon->SetRenderCustomDepth(false);
 }
 
-void AAuraEnemy::BeginDestroy()
+void AAuraEnemy::BeginPlay()
 {
-	Super::BeginDestroy();
+	Super::BeginPlay();
 	AbilitySystemComponent->InitAbilityActorInfo(this, this);
 }
 
