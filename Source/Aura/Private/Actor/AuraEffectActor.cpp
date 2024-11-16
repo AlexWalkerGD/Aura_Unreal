@@ -18,10 +18,10 @@ void AAuraEffectActor::BeginPlay()
 	Super::BeginPlay();
 }
 
-void AAuraEffectActor::ApplyEffectToTarget(AActor* target, TSubclassOf<UGameplayEffect> GamePlayEffectClass)
+void AAuraEffectActor::ApplyEffectToTarget(AActor* targetActor, TSubclassOf<UGameplayEffect> GamePlayEffectClass)
 {
-	UAbilitySystemComponent* TargetASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(target);
-	if(TargetASC) return;
+	UAbilitySystemComponent* TargetASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(targetActor);
+	if(TargetASC == nullptr) return;
 
 	check(GamePlayEffectClass)
 	FGameplayEffectContextHandle EffectContextHandle = TargetASC->MakeEffectContext();
