@@ -33,11 +33,16 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 
 	Cast<UAuraAbilitySystemComponent>(AbilitySystemComponent)->EffectAssetTags.AddLambda(
 
-		[](const FGameplayTagContainer AssetTags)
+		[this](const FGameplayTagContainer AssetTags)
 		{
 			for(const FGameplayTag& Tag : AssetTags )
 			{
-		
+				FGameplayTag MessageTag = FGameplayTag::RequestGameplayTag(FName("Message"));
+				if(Tag.MatchesTag(MessageTag))
+				{
+					FUIWidgetRow* Row = GetDataTableRowByTag<FUIWidgetRow>(MessageWidgetDataTable, Tag);
+					MessageWidgetRowDelegate.Broadcast(*Row);
+				}
 			}
 		}
 	);	
