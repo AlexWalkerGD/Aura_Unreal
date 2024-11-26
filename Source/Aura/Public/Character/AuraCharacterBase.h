@@ -6,6 +6,7 @@
 #include "AbilitySystemInterface.h"
 #include "GameplayEffect.h"
 #include "GameFramework/Character.h"
+#include "Interact/CombatInterface.h"
 #include "AuraCharacterBase.generated.h"
 
 class UAbilitySystemComponent;
@@ -13,7 +14,7 @@ class UAttributeSet;
 class UGameplayEffect; 
 
 UCLASS(Abstract)
-class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInterface
+class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInterface, public ICombatInterface
 {
 	GENERATED_BODY()
 
