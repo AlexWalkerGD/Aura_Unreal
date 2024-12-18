@@ -49,6 +49,8 @@ struct FEffectProperties
 	ACharacter* TargetCharacter = nullptr;
 };
 
+typedef TBaseStaticDelegateInstance<FGameplayAttribute(), FDefaultDelegateUserPolicy>::FFuncPtr FAttributeFuncPtr;
+
 /**
  * 
  */
@@ -65,6 +67,8 @@ public:
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
 
 	virtual void PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data) override;
+
+	TMap<FGameplayTag, FAttributeFuncPtr> TagToAttributes;
 
 	void SetEffectProperties(const struct FGameplayEffectModCallbackData& Data, FEffectProperties& Props) const;
 
