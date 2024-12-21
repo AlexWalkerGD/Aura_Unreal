@@ -9,6 +9,7 @@
 #include "GameplayTagContainer.h"
 #include "AuraPlayerController.generated.h"
 
+class USplineComponent;
 class UInputMappingContext;
 class UInputAction;
 class IEnemyInterface;
@@ -57,4 +58,18 @@ private:
 	TObjectPtr<UAuraAbilitySystemComponent> AuraAbilitySystemComponent;
 
 	UAuraAbilitySystemComponent* GetASC();
+
+	FVector CachedDestination = FVector::ZeroVector;
+	float FollowTime = 0.0f;
+	float ShortPressThreshold = 0.5f;
+	bool bAutoRunning = false;
+	bool bTargeting = false;
+
+	UPROPERTY(EditDefaultsOnly)
+	float AutoRunAcceptanceRadius = 50.0f;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<USplineComponent> Spline;	
+
+	void AutoRun();
 };
