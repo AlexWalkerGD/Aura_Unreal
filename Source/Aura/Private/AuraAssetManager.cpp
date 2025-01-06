@@ -18,4 +18,6 @@ void UAuraAssetManager::StartInitialLoading()
 	Super::StartInitialLoading();
 
 	FAuraGameplayTags::InitializeNativeGameplayTags();
+
+	UAbilitySystemGlobals::Get().InitGlobalData();
 }
