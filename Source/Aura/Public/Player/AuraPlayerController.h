@@ -47,6 +47,7 @@ private:
 	void ShiftReleased(){ bShiftKeyDown = false; };
 	bool bShiftKeyDown = false;
 	
+	
 	void Move(const FInputActionValue& InputActionValue);
 	void CursorTrace();
 

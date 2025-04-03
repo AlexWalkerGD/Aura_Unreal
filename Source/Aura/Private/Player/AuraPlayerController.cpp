@@ -93,11 +93,11 @@ void AAuraPlayerController::AbilityInputTagReleased(FGameplayTag InputTag)
 {
 	if(!InputTag.MatchesTagExact(FAuraGameplayTags::Get().InputTag_LMB))
 	{
-		if(GetASC()) GetASC()->AbilityInputTagHeld(InputTag);
+		if(GetASC()) GetASC()->AbilityInputTagReleased(InputTag);
 		return;
 	}
 
-	if(GetASC()) GetASC()->AbilityInputTagHeld(InputTag);
+	if(GetASC()) GetASC()->AbilityInputTagReleased(InputTag);
 	
 	if(!bTargeting && !bShiftKeyDown)
 	{
@@ -108,7 +108,7 @@ void AAuraPlayerController::AbilityInputTagReleased(FGameplayTag InputTag)
 			{
 				Spline->ClearSplinePoints();
 				for (const FVector PointLoc : NavPath->PathPoints)
-				{
+				{ 
 					Spline->AddSplinePoint(PointLoc, ESplineCoordinateSpace::World);
 				}
 				CachedDestination = NavPath->PathPoints[NavPath->PathPoints.Num() - 1];
