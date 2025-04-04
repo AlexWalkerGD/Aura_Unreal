@@ -1,4 +1,4 @@
-// Copyright Alex Walker'GD
+ // Copyright Alex Walker'GD
 
 
 #include "Actor/AuraEffectActor.h"
