@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Character/AuraCharacterBase.h"
 #include "Interact/EnemyInterface.h"
+#include "GameplayTagContainer.h"
 #include "AbilitySystem/Data/CharacterClassInfo.h"
 #include "UI/WidgetController/OverlayWidgetController.h"
 #include "AuraEnemy.generated.h"
