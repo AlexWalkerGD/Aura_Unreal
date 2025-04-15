@@ -97,3 +97,9 @@ void AAuraEnemy::InitAbilityActorInfo()
 	InitializeDefaultAttributes();
 }
 
+void AAuraEnemy::Die()
+{
+	SetLifeSpan(LifeSpan);
+	Super::Die();
+}
+
