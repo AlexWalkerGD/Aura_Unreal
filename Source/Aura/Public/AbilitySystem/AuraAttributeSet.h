@@ -71,6 +71,7 @@ public:
 	TMap<FGameplayTag, FAttributeFuncPtr> TagToAttributes;
 
 	void SetEffectProperties(const struct FGameplayEffectModCallbackData& Data, FEffectProperties& Props) const;
+	void ShowFloatingText(const FEffectProperties& Props, float Damage) const;
 
 	
 	// Primary Attributes	
