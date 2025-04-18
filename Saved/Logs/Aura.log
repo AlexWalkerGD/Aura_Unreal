@@ -1881,3 +1881,687 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.04.18-20.16.08:554][222]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
 [2025.04.18-20.16.08:562][222]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
 [2025.04.18-20.16.08:588][223]LogPlayLevel: Display: Destroying online subsystem :Context_18
+[2025.04.18-20.19.27:379][769]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1374.910889
+[2025.04.18-20.19.27:596][793]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.18-20.19.27:596][793]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1375.120972, Update Interval: 334.113586
+[2025.04.18-20.19.29:846][996]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.19.29:846][996]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.19.29:846][996]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.19.29:859][996]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.19.29:859][996]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.19.39:842][ 77]LogContentBrowser: Deferred new asset file creation: WBP_DamageText1
+[2025.04.18-20.19.39:857][ 77]LogContentBrowser: Creating deferred item: WBP_DamageText1
+[2025.04.18-20.19.39:882][ 78]LogContentBrowser: Renaming the item being created (Deferred Item: WBP_DamageText1).
+[2025.04.18-20.19.50:434][340]LogContentBrowser: Attempting asset rename: WBP_DamageText1 -> WBP_DamageMessage
+[2025.04.18-20.19.50:458][340]LogUObjectHash: Compacting FUObjectHashTables data took   1.65ms
+[2025.04.18-20.19.50:475][340]LogContentBrowser: End creating deferred item WBP_DamageText1
+[2025.04.18-20.20.02:476][292]LogContentBrowser: Attempting asset rename: WBP_DamageMessage -> WBP_HitMessage
+[2025.04.18-20.20.02:503][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:503][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage_C' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C:PreConstruct' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C:Construct' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C:Tick' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C:UpdateDamageText' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.SKEL_WBP_HitMessage_C:GetColorBasedOnBlockanCrit' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage_C:Construct' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage_C:UpdateDamageText' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogMetaData: Removing '/Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage_C:GetColorBasedOnBlockanCrit' ref from Metadata '/Game/Blueprints/UI/FloatWidget/WBP_DamageMessage.PackageMetaData'
+[2025.04.18-20.20.02:504][292]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.20.02:555][292]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_HitMessage
+[2025.04.18-20.20.02:556][292]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_HitMessageD280119843D1DFCDFBAD568FEBE870F3.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_HitMessage.uasset'
+[2025.04.18-20.20.02:571][292]LogFileHelpers: InternalPromptForCheckoutAndSave took 66 ms (total: 1.10 sec)
+[2025.04.18-20.20.02:593][292]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2025.04.18-20.20.02:606][292]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.04.18-20.20.02:621][292]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2025.04.18-20.20.02:623][292]AssetCheck: New page: Asset Save: WBP_HitMessage
+[2025.04.18-20.20.02:623][292]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+[2025.04.18-20.20.02:654][294]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+[2025.04.18-20.20.02:654][294]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.20.02:654][294]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.20.02:664][294]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.20.02:664][294]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.20.19:195][244]BlueprintLog: New page: Compile WBP_HitMessage
+[2025.04.18-20.20.19:221][244]LogUObjectHash: Compacting FUObjectHashTables data took   1.25ms
+[2025.04.18-20.20.19:549][278]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.20.19:603][278]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_HitMessage
+[2025.04.18-20.20.19:604][278]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_HitMessage23A761D34C24AE9CD4FA0B8451686B69.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_HitMessage.uasset'
+[2025.04.18-20.20.19:613][278]LogFileHelpers: InternalPromptForCheckoutAndSave took 63 ms (total: 1.17 sec)
+[2025.04.18-20.20.19:615][278]AssetCheck: New page: Asset Save: WBP_HitMessage
+[2025.04.18-20.20.19:617][278]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+[2025.04.18-20.20.19:702][288]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.20.19:754][288]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_HitMessage
+[2025.04.18-20.20.19:755][288]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_HitMessageA7ED44EB4E00779C81340E9BE4797CAC.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_HitMessage.uasset'
+[2025.04.18-20.20.19:764][288]LogFileHelpers: InternalPromptForCheckoutAndSave took 62 ms (total: 1.23 sec)
+[2025.04.18-20.20.19:769][288]AssetCheck: New page: Asset Save: WBP_HitMessage
+[2025.04.18-20.20.19:769][288]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+[2025.04.18-20.20.28:097][246]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.20.28:148][246]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_HitMessage
+[2025.04.18-20.20.28:149][246]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_HitMessage113FB50744AF19D626A6769CA92971D1.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_HitMessage.uasset'
+[2025.04.18-20.20.28:157][246]LogFileHelpers: InternalPromptForCheckoutAndSave took 59 ms (total: 1.29 sec)
+[2025.04.18-20.20.28:161][246]AssetCheck: New page: Asset Save: WBP_HitMessage
+[2025.04.18-20.20.28:161][246]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+[2025.04.18-20.23.21:119][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2025.04.18-20.23.21:834][254]LogSlate: Window 'Delete Assets' being destroyed
+[2025.04.18-20.23.21:903][254]LogWorld: UWorld::CleanupWorld for World_26, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.23.21:903][254]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.23.21:911][254]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.23.21:911][254]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.23.21:935][254]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blueprints/UI/FloatWidget/WBP_HitMessage.WBP_HitMessage
+	Asset Type: WidgetBlueprint
+[2025.04.18-20.23.22:299][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2025.04.18-20.23.22:314][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.18-20.23.22:326][254]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2025.04.18-20.23.50:469][808]LogSlate: Took 0.000165 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2025.04.18-20.23.50:519][810]LogSlate: Last resort fallback font was requested. Font: '/Game/Assets/Fonts/David_Libre/DavidLibre-Regular.DavidLibre-Regular', Character: '_ (U+005f)'
+[2025.04.18-20.23.50:530][810]LogSlate: Took 0.010866 seconds to synchronously load lazily loaded font '../../../Engine/Content/SlateDebug/Fonts/LastResort.ttf' (5269K)
+[2025.04.18-20.25.09:739][ 31]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2025.04.18-20.25.09:742][ 31]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/StartupMap' took 0.018
+[2025.04.18-20.25.09:744][ 31]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Blueprints/UI/FloatWidget/WBP_DamageText] ([2] browsable assets)...
+[2025.04.18-20.25.09:748][ 31]OBJ SavePackage:     Rendered thumbnail for [WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText]
+[2025.04.18-20.25.09:748][ 31]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/UI/FloatWidget/WBP_DamageText]
+[2025.04.18-20.25.09:766][ 31]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/Blueprints/UI/FloatWidget/WBP_DamageText_Auto1
+[2025.04.18-20.25.09:767][ 31]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageText_Auto1A2E869B5443F6F9E33991588925F1F6F.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/Autosaves/Game/Blueprints/UI/FloatWidget/WBP_DamageText_Auto1.uasset'
+[2025.04.18-20.25.09:768][ 31]LogFileHelpers: Auto-saving content packages took 0.025
+[2025.04.18-20.25.18:228][897]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 1725.765137
+[2025.04.18-20.25.18:440][920]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.18-20.25.18:440][920]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 1725.966919, Update Interval: 310.898773
+[2025.04.18-20.27.07:715][427]LogD3D12RHI: Warning: Descriptor cache ran out of sub allocated descriptor blocks! Moving to Context local View heap strategy
+[2025.04.18-20.27.07:715][427]LogD3D12RHI: This should only happen in the Editor where it doesn't matter as much. If it happens in game you should increase the device global heap size!
+[2025.04.18-20.28.10:814][ 62]LogD3D12RHI: OnlineHeap RollOver Detected. Increase the heap size to prevent creation of additional heaps
+[2025.04.18-20.28.53:520][836]Cmd: TRANSACTION UNDO
+[2025.04.18-20.28.53:520][836]LogEditorTransaction: Undo Animatable Property Changed
+[2025.04.18-20.31.12:378][256]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2079.911133
+[2025.04.18-20.31.13:378][259]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.18-20.31.13:378][259]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2080.578369, Update Interval: 340.595734
+[2025.04.18-20.32.56:390][872]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.32.56:436][872]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
+[2025.04.18-20.32.57:035][912]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.32.57:093][912]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.32.57:095][912]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextE6A6447341216D192474E6BB405B002B.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.32.57:105][912]LogFileHelpers: InternalPromptForCheckoutAndSave took 69 ms (total: 1.36 sec)
+[2025.04.18-20.32.57:108][912]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.32.57:108][912]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.33.07:753][139]BlueprintLog: New page: Compile GE_AuraSecondaryAttributes
+[2025.04.18-20.33.07:997][139]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2025.04.18-20.33.08:167][148]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.33.08:207][148]LogSavePackage: Moving output files for package: /Game/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes
+[2025.04.18-20.33.08:208][148]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/GE_AuraSecondaryAttributes31731ABC4BA30E1B55D4F4B6E7CF82FA.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes.uasset'
+[2025.04.18-20.33.08:217][148]LogFileHelpers: InternalPromptForCheckoutAndSave took 50 ms (total: 1.41 sec)
+[2025.04.18-20.33.08:220][148]AssetCheck: New page: Asset Save: GE_AuraSecondaryAttributes
+[2025.04.18-20.33.08:220][148]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes.GE_AuraSecondaryAttributes
+[2025.04.18-20.33.08:326][160]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.33.08:369][160]LogSavePackage: Moving output files for package: /Game/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes
+[2025.04.18-20.33.08:370][160]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/GE_AuraSecondaryAttributes3BB6787340335A1AEFF8E88419B8F57D.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes.uasset'
+[2025.04.18-20.33.08:380][160]LogFileHelpers: InternalPromptForCheckoutAndSave took 53 ms (total: 1.46 sec)
+[2025.04.18-20.33.08:384][160]AssetCheck: New page: Asset Save: GE_AuraSecondaryAttributes
+[2025.04.18-20.33.08:384][160]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Blueprints/AbilitySystem/GameplayEffects/DefaultAttributes/Aura/GE_AuraSecondaryAttributes.GE_AuraSecondaryAttributes
+[2025.04.18-20.33.24:525][981]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.33.24:554][981]LogUObjectHash: Compacting FUObjectHashTables data took   1.42ms
+[2025.04.18-20.33.25:108][ 32]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.33.25:170][ 32]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.33.25:171][ 32]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextE21E239643EFF686AD9404BEEB058A5F.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.33.25:182][ 32]LogFileHelpers: InternalPromptForCheckoutAndSave took 73 ms (total: 1.54 sec)
+[2025.04.18-20.33.25:186][ 32]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.33.25:186][ 32]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.33.25:249][ 36]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.33.25:307][ 36]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.33.25:308][ 36]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageText2B3310174FC4B3BAED20FEB1DFF98C29.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.33.25:317][ 36]LogFileHelpers: InternalPromptForCheckoutAndSave took 68 ms (total: 1.60 sec)
+[2025.04.18-20.33.25:322][ 36]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.33.25:322][ 36]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.33.26:172][100]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.33.26:186][100]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.33.26:186][100]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:33:26)
+[2025.04.18-20.33.26:187][100]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.33.26:201][100]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011494s)
+[2025.04.18-20.33.26:203][100]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.014653s)
+[2025.04.18-20.33.26:221][100]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2025.04.18-20.33.26:227][100]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.33.26:231][100]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.33.26:234][100]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.33.26:237][100]LogPlayLevel: PIE: World Init took: (0.007651s)
+[2025.04.18-20.33.26:237][100]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2025.04.18-20.33.26:238][100]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.33.26:239][100]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.33.26:239][100]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.33.26:241][100]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.33.26:241][100]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.33.26:241][100]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.33.26:246][100]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.33.26:298][100]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.33.26:304][100]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.33.26:304][100]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.33.26:304][100]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.33.26:304][100]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2025.04.18-20.33.26:304][100]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=7
+[2025.04.18-20.33.26:310][100]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2025.04.18-20.33.26:310][100]LogInit: FAudioDevice initialized with ID 7.
+[2025.04.18-20.33.26:310][100]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2025.04.18-20.33.26:310][100]LogAudio: Display: Audio Device (ID: 7) registered with world 'StartupMap'.
+[2025.04.18-20.33.26:314][100]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2025.04.18-20.33.26:354][100]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.33.26:354][100]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.33.26:364][100]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.33.26
+[2025.04.18-20.33.26:378][100]LogOnline: OSS: Created online subsystem instance for: :Context_23
+[2025.04.18-20.33.26:381][100]LogWorld: Bringing up level for play took: 0.025049
+[2025.04.18-20.33.26:392][100]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.33.26:394][100]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.33.26:396][100]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.33.26:397][100]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.33.26:401][100]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.33.26:401][100]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.33.26:402][100]LogNet: GameNetDriver IpNetDriver_5 IpNetDriver listening on port 17777
+[2025.04.18-20.33.26:411][100]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.33.26:412][100]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.33.26:413][100]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.33.26:413][100]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.33.26:414][100]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.33.26:418][100]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.33.26:420][100]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.33.26:424][100]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.33.26:427][100]PIE: Server logged in
+[2025.04.18-20.33.26:430][100]PIE: Play in editor total start time 0,246 seconds.
+[2025.04.18-20.33.26:477][100]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.33.29:897][251]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.33.29:897][251]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.33.29:899][251]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.33.29:915][251]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.33.29:918][251]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.33.29:922][251]LogNet: World NetDriver shutdown IpNetDriver_5 [GameNetDriver]
+[2025.04.18-20.33.29:922][251]LogNet: DestroyNamedNetDriver IpNetDriver_5 [GameNetDriver]
+[2025.04.18-20.33.29:922][251]LogExit: GameNetDriver IpNetDriver_5 shut down
+[2025.04.18-20.33.29:926][251]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.33.29:938][251]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.33.29:955][251]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.18-20.33.29:956][251]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2025.04.18-20.33.29:956][251]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2025.04.18-20.33.29:958][251]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2025.04.18-20.33.29:974][251]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2025.04.18-20.33.30:022][252]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2025.04.18-20.33.33:259][561]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.33.33:259][561]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.33.34:791][701]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.33.34:792][701]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.33.35:261][744]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.33.35:261][744]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.33.37:768][  8]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2025.04.18-20.35.20:680][987]LogEditorTransaction: Undo Move Node
+[2025.04.18-20.35.24:956][435]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.35.24:988][435]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
+[2025.04.18-20.35.25:314][464]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.35.25:372][464]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.35.25:372][464]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextB342614144499B1ABD2A5AB6018EC5ED.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.35.25:380][464]LogFileHelpers: InternalPromptForCheckoutAndSave took 66 ms (total: 1.67 sec)
+[2025.04.18-20.35.25:383][464]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.35.25:384][464]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.35.25:478][475]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.35.25:529][475]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.35.25:530][475]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextFFEB403B4D58673E692DA2B2821221E3.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.35.25:538][475]LogFileHelpers: InternalPromptForCheckoutAndSave took 60 ms (total: 1.73 sec)
+[2025.04.18-20.35.25:543][475]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.35.25:543][475]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.36.17:366][409]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.36.17:396][409]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2025.04.18-20.36.17:903][458]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.36.17:961][458]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.36.17:962][458]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageText290DA537418A9F7A8B7E9DBC86E0E0AF.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.36.17:970][458]LogFileHelpers: InternalPromptForCheckoutAndSave took 68 ms (total: 1.80 sec)
+[2025.04.18-20.36.17:973][458]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.36.17:973][458]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.36.18:044][466]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.36.18:104][466]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.36.18:104][466]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextDD86D5824F1C7F886976AAA2D195C5E9.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.36.18:113][466]LogFileHelpers: InternalPromptForCheckoutAndSave took 68 ms (total: 1.87 sec)
+[2025.04.18-20.36.18:117][466]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.36.18:117][466]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.36.19:061][551]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.36.19:068][551]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.36.19:069][551]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:36:19)
+[2025.04.18-20.36.19:069][551]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.36.19:074][551]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005990s)
+[2025.04.18-20.36.19:075][551]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.006228s)
+[2025.04.18-20.36.19:089][551]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2025.04.18-20.36.19:093][551]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.36.19:093][551]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.36.19:094][551]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.36.19:094][551]LogPlayLevel: PIE: World Init took: (0.001443s)
+[2025.04.18-20.36.19:095][551]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.36.19:095][551]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.36.19:095][551]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.36.19:096][551]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.36.19:096][551]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.36.19:096][551]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.36.19:098][551]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.36.19:126][551]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.36.19:127][551]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.36.19:127][551]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.36.19:127][551]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.36.19:127][551]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2025.04.18-20.36.19:127][551]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=8
+[2025.04.18-20.36.19:130][551]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2025.04.18-20.36.19:130][551]LogInit: FAudioDevice initialized with ID 8.
+[2025.04.18-20.36.19:130][551]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2025.04.18-20.36.19:130][551]LogAudio: Display: Audio Device (ID: 8) registered with world 'StartupMap'.
+[2025.04.18-20.36.19:130][551]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2025.04.18-20.36.19:156][551]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.36.19:157][551]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.36.19:162][551]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.36.19
+[2025.04.18-20.36.19:164][551]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2025.04.18-20.36.19:166][551]LogWorld: Bringing up level for play took: 0.008557
+[2025.04.18-20.36.19:171][551]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.19:171][551]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.36.19:171][551]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.36.19:172][551]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.36.19:172][551]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.36.19:172][551]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.36.19:172][551]LogNet: GameNetDriver IpNetDriver_6 IpNetDriver listening on port 17777
+[2025.04.18-20.36.19:173][551]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.19:173][551]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.36.19:173][551]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.19:173][551]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.36.19:174][551]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.19:174][551]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.36.19:174][551]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.36.19:174][551]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.36.19:176][551]PIE: Server logged in
+[2025.04.18-20.36.19:177][551]PIE: Play in editor total start time 0,109 seconds.
+[2025.04.18-20.36.19:196][551]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.36.21:329][694]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:330][694]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:431][701]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:533][708]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:636][715]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:739][722]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:838][729]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.21:942][736]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:030][742]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:132][749]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:232][756]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:333][763]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:434][770]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:535][777]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:636][784]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:737][791]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:838][798]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.22:937][805]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.23:038][812]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.23:137][819]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.23:237][826]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.23:338][833]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.24:841][936]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.36.24:842][936]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.36.24:842][936]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.36.24:849][936]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.36.24:850][936]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.36.24:851][936]LogNet: World NetDriver shutdown IpNetDriver_6 [GameNetDriver]
+[2025.04.18-20.36.24:851][936]LogNet: DestroyNamedNetDriver IpNetDriver_6 [GameNetDriver]
+[2025.04.18-20.36.24:851][936]LogExit: GameNetDriver IpNetDriver_6 shut down
+[2025.04.18-20.36.24:853][936]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.36.24:858][936]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.36.24:871][936]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2025.04.18-20.36.24:871][936]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2025.04.18-20.36.24:873][936]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2025.04.18-20.36.24:883][936]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2025.04.18-20.36.24:942][938]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2025.04.18-20.36.41:653][900]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.36.41:677][900]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.04.18-20.36.42:154][944]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.36.42:221][944]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.36.42:222][944]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextC04AC254485FC6D2E61A088AD96E5A98.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.36.42:231][944]LogFileHelpers: InternalPromptForCheckoutAndSave took 76 ms (total: 1.94 sec)
+[2025.04.18-20.36.42:234][944]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.36.42:234][944]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.36.42:289][950]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.36.42:350][950]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.36.42:351][950]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageText14E5AF43401A6BBA2F45FBBA171658D4.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.36.42:361][950]LogFileHelpers: InternalPromptForCheckoutAndSave took 72 ms (total: 2.02 sec)
+[2025.04.18-20.36.42:364][950]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.36.42:364][950]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.36.43:783][ 76]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.36.43:791][ 76]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.36.43:791][ 76]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:36:43)
+[2025.04.18-20.36.43:791][ 76]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.36.43:797][ 76]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005690s)
+[2025.04.18-20.36.43:797][ 76]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.005909s)
+[2025.04.18-20.36.43:812][ 76]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2025.04.18-20.36.43:818][ 76]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.36.43:818][ 76]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.36.43:819][ 76]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.36.43:819][ 76]LogPlayLevel: PIE: World Init took: (0.001292s)
+[2025.04.18-20.36.43:819][ 76]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2025.04.18-20.36.43:819][ 76]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.36.43:820][ 76]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.36.43:820][ 76]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.36.43:820][ 76]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.36.43:821][ 76]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.36.43:821][ 76]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.36.43:823][ 76]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.36.43:850][ 76]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.36.43:850][ 76]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.36.43:850][ 76]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.36.43:850][ 76]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.36.43:851][ 76]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2025.04.18-20.36.43:851][ 76]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2025.04.18-20.36.43:854][ 76]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2025.04.18-20.36.43:854][ 76]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2025.04.18-20.36.43:854][ 76]LogInit: FAudioDevice initialized with ID 9.
+[2025.04.18-20.36.43:854][ 76]LogAudio: Display: Audio Device (ID: 9) registered with world 'StartupMap'.
+[2025.04.18-20.36.43:854][ 76]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2025.04.18-20.36.43:884][ 76]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.36.43:884][ 76]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.36.43:889][ 76]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.36.43
+[2025.04.18-20.36.43:892][ 76]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2025.04.18-20.36.43:894][ 76]LogWorld: Bringing up level for play took: 0.009253
+[2025.04.18-20.36.43:898][ 76]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.36.43:899][ 76]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.36.43:899][ 76]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.36.43:899][ 76]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.36.43:899][ 76]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.36.43:899][ 76]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.36.43:899][ 76]LogNet: GameNetDriver IpNetDriver_7 IpNetDriver listening on port 17777
+[2025.04.18-20.36.43:900][ 76]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.43:900][ 76]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.36.43:900][ 76]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.43:901][ 76]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.36.43:901][ 76]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.36.43:901][ 76]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.36.43:901][ 76]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.36.43:901][ 76]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.36.43:903][ 76]PIE: Server logged in
+[2025.04.18-20.36.43:905][ 76]PIE: Play in editor total start time 0,114 seconds.
+[2025.04.18-20.36.43:923][ 76]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.36.47:802][340]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.36.47:802][340]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.36.47:803][340]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.36.47:810][340]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.36.47:811][340]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.36.47:812][340]LogNet: World NetDriver shutdown IpNetDriver_7 [GameNetDriver]
+[2025.04.18-20.36.47:812][340]LogNet: DestroyNamedNetDriver IpNetDriver_7 [GameNetDriver]
+[2025.04.18-20.36.47:812][340]LogExit: GameNetDriver IpNetDriver_7 shut down
+[2025.04.18-20.36.47:814][340]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.36.47:818][340]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.36.47:834][340]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.18-20.36.47:834][340]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2025.04.18-20.36.47:834][340]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2025.04.18-20.36.47:836][340]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2025.04.18-20.36.47:844][340]LogUObjectHash: Compacting FUObjectHashTables data took   1.38ms
+[2025.04.18-20.36.47:877][341]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2025.04.18-20.37.26:255][824]BlueprintLog: New page: Compile WBP_DamageText
+[2025.04.18-20.37.26:287][824]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2025.04.18-20.37.26:888][886]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.37.26:953][886]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.37.26:954][886]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageText3E6435D44A33F649AB4C94AD18BED2FF.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.37.26:962][886]LogFileHelpers: InternalPromptForCheckoutAndSave took 73 ms (total: 2.09 sec)
+[2025.04.18-20.37.26:964][886]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.37.26:964][886]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.37.27:035][895]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 2454.584961
+[2025.04.18-20.37.27:058][897]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.18-20.37.27:114][897]LogSavePackage: Moving output files for package: /Game/Blueprints/UI/FloatWidget/WBP_DamageText
+[2025.04.18-20.37.27:115][897]LogSavePackage: Moving '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Saved/WBP_DamageTextF1FDF39D489F8E1A01C3D8862150A9C9.tmp' to '../../../../../../Users/alexw/Documents/Unreal Projects/Aura/Content/Blueprints/UI/FloatWidget/WBP_DamageText.uasset'
+[2025.04.18-20.37.27:123][897]LogFileHelpers: InternalPromptForCheckoutAndSave took 65 ms (total: 2.16 sec)
+[2025.04.18-20.37.27:126][897]AssetCheck: New page: Asset Save: WBP_DamageText
+[2025.04.18-20.37.27:126][897]LogContentValidation: Display: Validating /Script/UMGEditor.WidgetBlueprint /Game/Blueprints/UI/FloatWidget/WBP_DamageText.WBP_DamageText
+[2025.04.18-20.37.27:685][963]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.04.18-20.37.27:685][963]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 2455.230469, Update Interval: 352.800079
+[2025.04.18-20.37.28:185][ 22]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.37.28:193][ 22]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.37.28:193][ 22]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:37:28)
+[2025.04.18-20.37.28:193][ 22]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.37.28:200][ 22]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005610s)
+[2025.04.18-20.37.28:200][ 22]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.005848s)
+[2025.04.18-20.37.28:214][ 22]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.04.18-20.37.28:219][ 22]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.37.28:220][ 22]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.37.28:220][ 22]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.37.28:220][ 22]LogPlayLevel: PIE: World Init took: (0.001406s)
+[2025.04.18-20.37.28:220][ 22]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2025.04.18-20.37.28:220][ 22]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.37.28:221][ 22]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.37.28:221][ 22]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.37.28:222][ 22]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.37.28:222][ 22]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.37.28:222][ 22]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.37.28:224][ 22]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.37.28:251][ 22]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.37.28:252][ 22]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.37.28:253][ 22]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.37.28:253][ 22]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.37.28:253][ 22]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2025.04.18-20.37.28:253][ 22]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2025.04.18-20.37.28:255][ 22]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2025.04.18-20.37.28:255][ 22]LogInit: FAudioDevice initialized with ID 10.
+[2025.04.18-20.37.28:255][ 22]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2025.04.18-20.37.28:255][ 22]LogAudio: Display: Audio Device (ID: 10) registered with world 'StartupMap'.
+[2025.04.18-20.37.28:256][ 22]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2025.04.18-20.37.28:285][ 22]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.37.28:285][ 22]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.37.28:291][ 22]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.37.28
+[2025.04.18-20.37.28:294][ 22]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2025.04.18-20.37.28:296][ 22]LogWorld: Bringing up level for play took: 0.010273
+[2025.04.18-20.37.28:300][ 22]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.37.28:301][ 22]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.37.28:301][ 22]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.37.28:301][ 22]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.37.28:301][ 22]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.37.28:301][ 22]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.37.28:301][ 22]LogNet: GameNetDriver IpNetDriver_8 IpNetDriver listening on port 17777
+[2025.04.18-20.37.28:302][ 22]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.28:302][ 22]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.37.28:303][ 22]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.28:303][ 22]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.37.28:303][ 22]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.28:304][ 22]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.37.28:304][ 22]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.37.28:304][ 22]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.37.28:305][ 22]PIE: Server logged in
+[2025.04.18-20.37.28:307][ 22]PIE: Play in editor total start time 0,114 seconds.
+[2025.04.18-20.37.28:316][ 22]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.37.51:214][607]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.37.51:214][607]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.37.51:215][607]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.37.51:221][607]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.37.51:222][607]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.37.51:223][607]LogNet: World NetDriver shutdown IpNetDriver_8 [GameNetDriver]
+[2025.04.18-20.37.51:223][607]LogNet: DestroyNamedNetDriver IpNetDriver_8 [GameNetDriver]
+[2025.04.18-20.37.51:223][607]LogExit: GameNetDriver IpNetDriver_8 shut down
+[2025.04.18-20.37.51:225][607]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.37.51:230][607]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.37.51:243][607]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.18-20.37.51:244][607]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2025.04.18-20.37.51:244][607]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2025.04.18-20.37.51:246][607]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2025.04.18-20.37.51:255][607]LogUObjectHash: Compacting FUObjectHashTables data took   1.32ms
+[2025.04.18-20.37.51:289][610]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2025.04.18-20.37.52:153][713]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.37.52:161][713]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.37.52:161][713]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:37:52)
+[2025.04.18-20.37.52:162][713]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.37.52:168][713]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006111s)
+[2025.04.18-20.37.52:168][713]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.006358s)
+[2025.04.18-20.37.52:183][713]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2025.04.18-20.37.52:185][713]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.37.52:185][713]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.37.52:185][713]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.37.52:186][713]LogPlayLevel: PIE: World Init took: (0.001285s)
+[2025.04.18-20.37.52:186][713]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.37.52:186][713]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.37.52:187][713]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.37.52:187][713]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.37.52:187][713]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.37.52:187][713]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.37.52:187][713]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.37.52:190][713]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.37.52:218][713]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.37.52:218][713]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.37.52:218][713]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.37.52:218][713]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.37.52:219][713]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=11
+[2025.04.18-20.37.52:219][713]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=11
+[2025.04.18-20.37.52:222][713]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=11
+[2025.04.18-20.37.52:222][713]LogInit: FAudioDevice initialized with ID 11.
+[2025.04.18-20.37.52:222][713]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=11
+[2025.04.18-20.37.52:222][713]LogAudio: Display: Audio Device (ID: 11) registered with world 'StartupMap'.
+[2025.04.18-20.37.52:222][713]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 11
+[2025.04.18-20.37.52:254][713]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.37.52:254][713]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.37.52:260][713]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.37.52
+[2025.04.18-20.37.52:263][713]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2025.04.18-20.37.52:265][713]LogWorld: Bringing up level for play took: 0.009854
+[2025.04.18-20.37.52:269][713]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.37.52:270][713]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.37.52:270][713]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.37.52:270][713]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.37.52:270][713]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.37.52:270][713]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.37.52:271][713]LogNet: GameNetDriver IpNetDriver_9 IpNetDriver listening on port 17777
+[2025.04.18-20.37.52:272][713]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.52:272][713]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.37.52:273][713]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.52:273][713]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.37.52:273][713]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.37.52:273][713]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.37.52:274][713]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.37.52:274][713]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.37.52:276][713]PIE: Server logged in
+[2025.04.18-20.37.52:278][713]PIE: Play in editor total start time 0,116 seconds.
+[2025.04.18-20.37.52:288][713]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.38.00:652][287]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.00:652][287]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.00:752][294]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.00:854][301]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.00:955][308]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:057][315]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:162][322]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:262][329]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:364][336]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:451][342]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:553][349]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:655][356]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:752][362]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:861][370]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.01:951][376]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:063][384]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:163][391]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:263][398]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:349][404]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:450][411]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:550][418]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.02:651][425]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.09:964][932]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.38.09:964][932]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.38.09:964][932]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.38.09:971][932]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.38.09:972][932]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.38.09:973][932]LogNet: World NetDriver shutdown IpNetDriver_9 [GameNetDriver]
+[2025.04.18-20.38.09:973][932]LogNet: DestroyNamedNetDriver IpNetDriver_9 [GameNetDriver]
+[2025.04.18-20.38.09:973][932]LogExit: GameNetDriver IpNetDriver_9 shut down
+[2025.04.18-20.38.09:975][932]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.38.09:980][932]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.38.09:994][932]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 11
+[2025.04.18-20.38.09:994][932]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2025.04.18-20.38.09:996][932]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=11
+[2025.04.18-20.38.10:004][932]LogUObjectHash: Compacting FUObjectHashTables data took   1.41ms
+[2025.04.18-20.38.10:039][934]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2025.04.18-20.38.12:783][254]LogDebuggerCommands: Repeating last play command: New Editor Window (PIE)
+[2025.04.18-20.38.12:791][254]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.18-20.38.12:791][254]PIE: New page: PIE session: StartupMap (18 de abr de 2025 22:38:12)
+[2025.04.18-20.38.12:791][254]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.38.12:797][254]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005549s)
+[2025.04.18-20.38.12:797][254]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/StartupMap.StartupMap to /Game/Maps/UEDPIE_0_StartupMap.StartupMap (0.005774s)
+[2025.04.18-20.38.12:812][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2025.04.18-20.38.12:814][254]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.38.12:814][254]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.18-20.38.12:814][254]LogAIModule: Creating AISystem for world StartupMap
+[2025.04.18-20.38.12:815][254]LogPlayLevel: PIE: World Init took: (0.001179s)
+[2025.04.18-20.38.12:815][254]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.18-20.38.12:815][254]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.18-20.38.12:815][254]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.18-20.38.12:816][254]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.18-20.38.12:816][254]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.18-20.38.12:816][254]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.18-20.38.12:818][254]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.18-20.38.12:845][254]LogAudioMixer: Display: Using Audio Hardware Device Realtek HD Audio 2nd output (Realtek(R) Audio)
+[2025.04.18-20.38.12:845][254]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.18-20.38.12:845][254]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.18-20.38.12:845][254]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.18-20.38.12:846][254]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=12
+[2025.04.18-20.38.12:846][254]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=12
+[2025.04.18-20.38.12:848][254]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=12
+[2025.04.18-20.38.12:849][254]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=12
+[2025.04.18-20.38.12:849][254]LogInit: FAudioDevice initialized with ID 12.
+[2025.04.18-20.38.12:849][254]LogAudio: Display: Audio Device (ID: 12) registered with world 'StartupMap'.
+[2025.04.18-20.38.12:849][254]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 12
+[2025.04.18-20.38.12:876][254]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.38.12:876][254]LogLoad: Game class is 'BP_AuraGameMode_C'
+[2025.04.18-20.38.12:880][254]LogWorld: Bringing World /Game/Maps/UEDPIE_0_StartupMap.StartupMap up for play (max tick rate 0) at 2025.04.18-21.38.12
+[2025.04.18-20.38.12:883][254]LogOnline: OSS: Created online subsystem instance for: :Context_28
+[2025.04.18-20.38.12:884][254]LogWorld: Bringing up level for play took: 0.007684
+[2025.04.18-20.38.12:888][254]LogTemp: Warning: Health Changed on BP_AuraCharacter_C_0, Health: 112.500000
+[2025.04.18-20.38.12:889][254]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2025.04.18-20.38.12:889][254]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2025.04.18-20.38.12:889][254]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2025.04.18-20.38.12:889][254]LogNet: Created socket for bind address: 0.0.0.0:17777
+[2025.04.18-20.38.12:889][254]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2025.04.18-20.38.12:889][254]LogNet: GameNetDriver IpNetDriver_10 IpNetDriver listening on port 17777
+[2025.04.18-20.38.12:890][254]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.38.12:890][254]LogTemp: Warning: Health Changed on BP_Goblin_SlingShot_C_1, Health: 90.000000
+[2025.04.18-20.38.12:891][254]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.38.12:891][254]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_1, Health: 90.000000
+[2025.04.18-20.38.12:891][254]LogAbilitySystem: Warning: Modifier on spec: Default__GE_SecondaryAttributes1Test_C was asked to CalculateMagnitude and failed, falling back to 0.
+[2025.04.18-20.38.12:891][254]LogTemp: Warning: Health Changed on BP_Goblin_Spear_C_2, Health: 90.000000
+[2025.04.18-20.38.12:892][254]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2025.04.18-20.38.12:892][254]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> CaptureDuringMouseDown
+[2025.04.18-20.38.12:893][254]PIE: Server logged in
+[2025.04.18-20.38.12:895][254]PIE: Play in editor total start time 0,104 seconds.
+[2025.04.18-20.38.12:905][254]LogViewport: Scene viewport resized to 1914x1040, mode Windowed.
+[2025.04.18-20.38.25:624][118]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.18-20.38.25:624][118]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_StartupMap
+[2025.04.18-20.38.25:625][118]LogSlate: Window 'Aura Preview [NetMode: Server 0]  (64-bit/PC D3D SM6)' being destroyed
+[2025.04.18-20.38.25:632][118]LogWorld: UWorld::CleanupWorld for StartupMap, bSessionEnded=true, bCleanupResources=true
+[2025.04.18-20.38.25:633][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.38.25:633][118]LogNet: World NetDriver shutdown IpNetDriver_10 [GameNetDriver]
+[2025.04.18-20.38.25:634][118]LogNet: DestroyNamedNetDriver IpNetDriver_10 [GameNetDriver]
+[2025.04.18-20.38.25:634][118]LogExit: GameNetDriver IpNetDriver_10 shut down
+[2025.04.18-20.38.25:636][118]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.18-20.38.25:641][118]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.18-20.38.25:657][118]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 12
+[2025.04.18-20.38.25:657][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2025.04.18-20.38.25:659][118]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=12
+[2025.04.18-20.38.25:669][118]LogUObjectHash: Compacting FUObjectHashTables data took   1.40ms
+[2025.04.18-20.38.25:686][119]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2025.04.18-20.39.56:110][425]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/AbilitySystem/GameplayAbilities/HitReact/GA_HitReact.GA_HitReact
+[2025.04.18-20.39.56:111][425]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.18-20.39.56:111][425]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
