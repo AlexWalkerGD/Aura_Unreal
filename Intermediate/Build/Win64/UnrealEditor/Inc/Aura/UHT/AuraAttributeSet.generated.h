@@ -28,6 +28,10 @@ template<> AURA_API UScriptStruct* StaticStruct<struct FEffectProperties>();
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_60_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAttributeSet_h_60_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnRep_PhysicalResistance); \
+	DECLARE_FUNCTION(execOnRep_ArcaneResistance); \
+	DECLARE_FUNCTION(execOnRep_LightningResistance); \
+	DECLARE_FUNCTION(execOnRep_FireResistance); \
 	DECLARE_FUNCTION(execOnRep_ManaRegeneration); \
 	DECLARE_FUNCTION(execOnRep_HealthRegeneration); \
 	DECLARE_FUNCTION(execOnRep_CriticalHitResistence); \
@@ -71,6 +75,10 @@ public: \
 		ManaRegeneration, \
 		MaxHealth, \
 		MaxMana, \
+		FireResistance, \
+		LightningResistance, \
+		ArcaneResistance, \
+		PhysicalResistance, \
 		Health, \
 		Mana, \
 		NETFIELD_REP_END=Mana	}; \
