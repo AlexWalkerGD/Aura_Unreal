@@ -145,11 +145,11 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 	}
 	DEFINE_FUNCTION(AAuraEffectActor::execApplyEffectToTarget)
 	{
-		P_GET_OBJECT(AActor,Z_Param_targetActor);
+		P_GET_OBJECT(AActor,Z_Param_TargetActor);
 		P_GET_OBJECT(UClass,Z_Param_GamePlayEffectClass);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->ApplyEffectToTarget(Z_Param_targetActor,Z_Param_GamePlayEffectClass);
+		P_THIS->ApplyEffectToTarget(Z_Param_TargetActor,Z_Param_GamePlayEffectClass);
 		P_NATIVE_END;
 	}
 	void AAuraEffectActor::StaticRegisterNativesAAuraEffectActor()
@@ -166,10 +166,10 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 	{
 		struct AuraEffectActor_eventApplyEffectToTarget_Parms
 		{
-			AActor* targetActor;
+			AActor* TargetActor;
 			TSubclassOf<UGameplayEffect>  GamePlayEffectClass;
 		};
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_targetActor;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 		static const UECodeGen_Private::FClassPropertyParams NewProp_GamePlayEffectClass;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -177,10 +177,10 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_targetActor = { "targetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraEffectActor_eventApplyEffectToTarget_Parms, targetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraEffectActor_eventApplyEffectToTarget_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_GamePlayEffectClass = { "GamePlayEffectClass", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraEffectActor_eventApplyEffectToTarget_Parms, GamePlayEffectClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(0, nullptr) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_targetActor,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_TargetActor,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget_Statics::NewProp_GamePlayEffectClass,
 	};
 #if WITH_METADATA
@@ -281,10 +281,15 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_bDestroyOnEffectRemoval_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bDestroyOnEffectApplication_MetaData[];
 #endif
-		static void NewProp_bDestroyOnEffectRemoval_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_bDestroyOnEffectRemoval;
+		static void NewProp_bDestroyOnEffectApplication_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bDestroyOnEffectApplication;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_bApplyEffectsToEnemies_MetaData[];
+#endif
+		static void NewProp_bApplyEffectsToEnemies_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_bApplyEffectsToEnemies;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_InstantGameplayEffectClass_MetaData[];
 #endif
@@ -327,7 +332,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraEffectActor_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_AAuraEffectActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget, "ApplyEffectToTarget" }, // 2286092709
+		{ &Z_Construct_UFunction_AAuraEffectActor_ApplyEffectToTarget, "ApplyEffectToTarget" }, // 1691577394
 		{ &Z_Construct_UFunction_AAuraEffectActor_OnEndOverlap, "OnEndOverlap" }, // 1623007178
 		{ &Z_Construct_UFunction_AAuraEffectActor_OnOverlap, "OnOverlap" }, // 1093760845
 	};
@@ -339,16 +344,27 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication_MetaData[] = {
 		{ "Category", "Applied Effects" },
 		{ "ModuleRelativePath", "Public/Actor/AuraEffectActor.h" },
 	};
 #endif
-	void Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval_SetBit(void* Obj)
+	void Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication_SetBit(void* Obj)
 	{
-		((AAuraEffectActor*)Obj)->bDestroyOnEffectRemoval = 1;
+		((AAuraEffectActor*)Obj)->bDestroyOnEffectApplication = 1;
 	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval = { "bDestroyOnEffectRemoval", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AAuraEffectActor), &Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval_MetaData), Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval_MetaData) };
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication = { "bDestroyOnEffectApplication", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AAuraEffectActor), &Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication_MetaData), Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies_MetaData[] = {
+		{ "Category", "Applied Effects" },
+		{ "ModuleRelativePath", "Public/Actor/AuraEffectActor.h" },
+	};
+#endif
+	void Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies_SetBit(void* Obj)
+	{
+		((AAuraEffectActor*)Obj)->bApplyEffectsToEnemies = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies = { "bApplyEffectsToEnemies", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AAuraEffectActor), &Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies_MetaData), Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InstantGameplayEffectClass_MetaData[] = {
 		{ "Category", "Applied Effects" },
@@ -403,7 +419,8 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 #endif
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InfiniteEffectRemovalPolicy = { "InfiniteEffectRemovalPolicy", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraEffectActor, InfiniteEffectRemovalPolicy), Z_Construct_UEnum_Aura_EEffectRemovalPolicy, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InfiniteEffectRemovalPolicy_MetaData), Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InfiniteEffectRemovalPolicy_MetaData) }; // 3097338331
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAuraEffectActor_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectRemoval,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bDestroyOnEffectApplication,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_bApplyEffectsToEnemies,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InstantGameplayEffectClass,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InstantEffectApplicationPolicy_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraEffectActor_Statics::NewProp_InstantEffectApplicationPolicy,
@@ -459,9 +476,9 @@ void EmptyLinkFunctionForGeneratedCodeAuraEffectActor() {}
 		{ EEffectRemovalPolicy_StaticEnum, TEXT("EEffectRemovalPolicy"), &Z_Registration_Info_UEnum_EEffectRemovalPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3097338331U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAuraEffectActor, AAuraEffectActor::StaticClass, TEXT("AAuraEffectActor"), &Z_Registration_Info_UClass_AAuraEffectActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraEffectActor), 2247858328U) },
+		{ Z_Construct_UClass_AAuraEffectActor, AAuraEffectActor::StaticClass, TEXT("AAuraEffectActor"), &Z_Registration_Info_UClass_AAuraEffectActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraEffectActor), 778630482U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_2376458703(TEXT("/Script/Aura"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_618474496(TEXT("/Script/Aura"),
 		Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_Statics::EnumInfo));
