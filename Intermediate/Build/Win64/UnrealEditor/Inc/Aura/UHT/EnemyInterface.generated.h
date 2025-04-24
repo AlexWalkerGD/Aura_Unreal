@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef AURA_EnemyInterface_generated_h
 #error "EnemyInterface.generated.h already included, missing '#pragma once' in EnemyInterface.h"
 #endif
@@ -17,8 +18,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_SPARSE_DATA
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual AActor* GetCombatTarget_Implementation() const { return NULL; }; \
+	virtual void SetCombatTarget_Implementation(AActor* InCombatTarget) {}; \
+ \
+	DECLARE_FUNCTION(execGetCombatTarget); \
+	DECLARE_FUNCTION(execSetCombatTarget);
+
+
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_ACCESSORS
+#define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_CALLBACK_WRAPPERS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	AURA_API UEnemyInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
@@ -56,6 +65,8 @@ protected: \
 public: \
 	typedef UEnemyInterface UClassType; \
 	typedef IEnemyInterface ThisClass; \
+	static AActor* Execute_GetCombatTarget(const UObject* O); \
+	static void Execute_SetCombatTarget(UObject* O, AActor* InCombatTarget); \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
@@ -68,6 +79,7 @@ public: \
 	FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
 	FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_ACCESSORS \
+	FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_CALLBACK_WRAPPERS \
 	FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Interact_EnemyInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

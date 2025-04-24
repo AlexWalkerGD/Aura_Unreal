@@ -33,6 +33,9 @@ public:
 
 	virtual int32 GetPlayerLevel() override;
 
+	virtual void SetCombatTarget_Implementation(AActor* InCombatTarget) override;
+	virtual AActor* GetCombatTarget_Implementation() const override;
+
 	UPROPERTY(BlueprintAssignable)
 	FOnAttributeChangedSignature OnHealthChanged;
 
@@ -49,6 +52,9 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category= "Combat")
 	float LifeSpan = 5.f;
+
+	UPROPERTY(blueprintReadWrite, Category="Combat")
+	AActor* CombatTarget;
 
 protected:
 	virtual void BeginPlay() override;
