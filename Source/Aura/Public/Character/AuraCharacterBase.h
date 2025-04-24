@@ -26,24 +26,29 @@ public:
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 
+	UFUNCTION(NetMulticast,Reliable)
+	virtual void MulticastHandleDeath();
+	
+	// Combat Interface
+	
+	virtual FVector GetCombatSocketLocation_Implementation() override;
+	virtual bool IsDead_Implementation() const override;
+	virtual AActor* GetAvatar_Implementation() override;
+	virtual void Die() override;
 	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
 
 protected:
+	
 	virtual void BeginPlay() override;
+
+	bool bDead = false;
 
 	UPROPERTY(EditAnywhere, Category= "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;
 
 	UPROPERTY(EditAnywhere, Category= "Combat")
 	FName WeaponTipSocketName;
-
-	virtual FVector GetCombatSocketLocation_Implementation() override;
 	
-	virtual void Die() override;
-
-	UFUNCTION(NetMulticast,Reliable)
-	virtual void MulticastHandleDeath();
-
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
@@ -65,6 +70,7 @@ protected:
 	virtual void InitializeDefaultAttributes() const;
 	void AddCharacterAbilities();
 
+	
 	// Dissolve Effects
 	
 	void Dissolve();
