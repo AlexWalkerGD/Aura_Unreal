@@ -28,6 +28,11 @@ public:
 
 	UFUNCTION(NetMulticast,Reliable)
 	virtual void MulticastHandleDeath();
+
+
+	UPROPERTY(EditAnywhere, Category = "Combat")
+	TArray<FTaggedMontage>AttackMontages;
+
 	
 	// Combat Interface
 	
@@ -36,6 +41,7 @@ public:
 	virtual AActor* GetAvatar_Implementation() override;
 	virtual void Die() override;
 	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
+	TArray<FTaggedMontage> GetAttackMontages_Implementation() override;
 
 protected:
 	
