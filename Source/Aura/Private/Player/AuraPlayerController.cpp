@@ -98,7 +98,7 @@ void AAuraPlayerController::CursorTrace()
 void AAuraPlayerController::AbilityInputTagPressed(FGameplayTag InputTag)
 {
 	if(InputTag.MatchesTagExact(FAuraGameplayTags::Get().InputTag_LMB))
-	{
+	{ 
 		bTargeting = ThisActor ? true : false;
 		bAutoRunning = false;	
 	}
