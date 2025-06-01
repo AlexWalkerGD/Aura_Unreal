@@ -180,6 +180,11 @@ void UAuraAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallba
 			ShowFloatingText(Props, LocalIncomingDamage, bBlockHit, bCriticalHit);
 		}
 	}
+
+	if(Data.EvaluatedData.Attribute == GetIncomingXPAttribute())
+	{
+		
+	}
 }
 
 void UAuraAttributeSet::ShowFloatingText(const FEffectProperties& Props, float Damage, bool bBlockedHit, bool bCriticalHit) const
