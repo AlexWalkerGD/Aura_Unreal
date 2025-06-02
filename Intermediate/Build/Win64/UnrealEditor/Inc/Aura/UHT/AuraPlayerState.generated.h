@@ -19,8 +19,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Player_AuraPlayerState_h_22_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Player_AuraPlayerState_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execOnRep_XP); \
-	DECLARE_FUNCTION(execOnRep_Level);
+	DECLARE_FUNCTION(execOnRep_Level); \
+	DECLARE_FUNCTION(execOnRep_XpBar);
 
 
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Player_AuraPlayerState_h_22_ACCESSORS

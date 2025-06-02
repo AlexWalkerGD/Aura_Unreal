@@ -54,12 +54,15 @@ void AAuraPlayerState::SetLevel(int32 InLevel)
 	OnLevelChangeDelegate.Broadcast(Level);
 }
 
+void AAuraPlayerState::OnRep_XpBar(int32 OldXP) 
+{
+	OnXPChangeDelegate.Broadcast(XP);
+}
+
 void AAuraPlayerState::OnRep_Level(int32 OldLevel)
 {
 	OnLevelChangeDelegate.Broadcast(Level);
 }
 
-void AAuraPlayerState::OnRep_XP(int32 OldXP)
-{
-	OnXPChangeDelegate.Broadcast(XP);
-}
+
+

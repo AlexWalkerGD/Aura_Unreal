@@ -57,13 +57,15 @@ private:
 	UPROPERTY(VisibleAnywhere, ReplicatedUsing=OnRep_Level)
 	int32 Level = 1;
 
-	UPROPERTY(VisibleAnywhere, ReplicatedUsing=OnRep_XP)
-	int32 XP = 1;
+	UPROPERTY(VisibleAnywhere, ReplicatedUsing=OnRep_XpBar)
+	int32 XP = 0;
 
+	UFUNCTION()
+	void OnRep_XpBar(int32 OldXP);
+	
 	UFUNCTION()
 	void OnRep_Level(int32 OldLevel);
 	
-	UFUNCTION()
-	void OnRep_XP(int32 OldXP);
+	
 	
 };
