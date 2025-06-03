@@ -12,6 +12,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UAbilitySystemComponent;
 struct FActiveGameplayEffectHandle;
 struct FGameplayEffectSpec;
+struct FGameplayTag;
 #ifdef AURA_AuraAbilitySystemComponent_generated_h
 #error "AuraAbilitySystemComponent.generated.h already included, missing '#pragma once' in AuraAbilitySystemComponent.h"
 #endif
@@ -22,8 +23,10 @@ struct FGameplayEffectSpec;
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_19_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void ClientEffectApplied_Implementation(UAbilitySystemComponent* AbilitySystemComponent, FGameplayEffectSpec const& EffectSpec, FActiveGameplayEffectHandle ActiveEffectHandle); \
+	virtual void ServerUpgradeAttribute_Implementation(FGameplayTag const& AttributeTag); \
  \
-	DECLARE_FUNCTION(execClientEffectApplied);
+	DECLARE_FUNCTION(execClientEffectApplied); \
+	DECLARE_FUNCTION(execServerUpgradeAttribute);
 
 
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_19_ACCESSORS
