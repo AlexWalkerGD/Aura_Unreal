@@ -40,6 +40,8 @@ public:
 	FGameplayTag InputTag_2;
 	FGameplayTag InputTag_3;
 	FGameplayTag InputTag_4;
+	FGameplayTag InputPassive_1;
+	FGameplayTag InputPassive_2;
 
 	FGameplayTag Damage;
 	FGameplayTag Damage_Fire;
@@ -50,6 +52,15 @@ public:
 	FGameplayTag Abilities_Attack;
 	FGameplayTag Abilities_Summon;
 	FGameplayTag Abilities_Fire_FireBolt;
+
+	FGameplayTag Abilities_Status_Locked;
+	FGameplayTag Abilities_Status_Unlocked;
+	FGameplayTag Abilities_Status_Eligible;
+	FGameplayTag Abilities_Status_Equipped;
+
+	FGameplayTag Abilities_Type_None;
+	FGameplayTag Abilities_Type_Passive;
+	FGameplayTag Abilities_Type_Offensive;
 
 	FGameplayTag Cooldown_Fire_FireBolt;
 
