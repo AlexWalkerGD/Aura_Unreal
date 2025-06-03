@@ -19,6 +19,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Player_AuraPlayerState_h_22_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_Player_AuraPlayerState_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnRep_SpellPoints); \
+	DECLARE_FUNCTION(execOnRep_AttributePoints); \
 	DECLARE_FUNCTION(execOnRep_Level); \
 	DECLARE_FUNCTION(execOnRep_XpBar);
 
@@ -37,7 +39,9 @@ public: \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
 		Level=NETFIELD_REP_START, \
 		XP, \
-		NETFIELD_REP_END=XP	}; \
+		AttributePoints, \
+		SpellPoints, \
+		NETFIELD_REP_END=SpellPoints	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
