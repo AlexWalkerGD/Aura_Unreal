@@ -21,6 +21,15 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 	GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 	UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
+	DEFINE_FUNCTION(UAuraAbilitySystemComponent::execClientUpdateAbilityStatus)
+	{
+		P_GET_STRUCT(FGameplayTag,Z_Param_AbilityTag);
+		P_GET_STRUCT(FGameplayTag,Z_Param_StatusTag);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ClientUpdateAbilityStatus_Implementation(Z_Param_AbilityTag,Z_Param_StatusTag);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UAuraAbilitySystemComponent::execClientEffectApplied)
 	{
 		P_GET_OBJECT(UAbilitySystemComponent,Z_Param_AbilitySystemComponent);
@@ -45,6 +54,11 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		FGameplayEffectSpec EffectSpec;
 		FActiveGameplayEffectHandle ActiveEffectHandle;
 	};
+	struct AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms
+	{
+		FGameplayTag AbilityTag;
+		FGameplayTag StatusTag;
+	};
 	struct AuraAbilitySystemComponent_eventServerUpgradeAttribute_Parms
 	{
 		FGameplayTag AttributeTag;
@@ -58,6 +72,14 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		Parms.ActiveEffectHandle=ActiveEffectHandle;
 		ProcessEvent(FindFunctionChecked(NAME_UAuraAbilitySystemComponent_ClientEffectApplied),&Parms);
 	}
+	static FName NAME_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus = FName(TEXT("ClientUpdateAbilityStatus"));
+	void UAuraAbilitySystemComponent::ClientUpdateAbilityStatus(FGameplayTag const& AbilityTag, FGameplayTag const& StatusTag)
+	{
+		AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms Parms;
+		Parms.AbilityTag=AbilityTag;
+		Parms.StatusTag=StatusTag;
+		ProcessEvent(FindFunctionChecked(NAME_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus),&Parms);
+	}
 	static FName NAME_UAuraAbilitySystemComponent_ServerUpgradeAttribute = FName(TEXT("ServerUpgradeAttribute"));
 	void UAuraAbilitySystemComponent::ServerUpgradeAttribute(FGameplayTag const& AttributeTag)
 	{
@@ -70,6 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		UClass* Class = UAuraAbilitySystemComponent::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ClientEffectApplied", &UAuraAbilitySystemComponent::execClientEffectApplied },
+			{ "ClientUpdateAbilityStatus", &UAuraAbilitySystemComponent::execClientUpdateAbilityStatus },
 			{ "ServerUpgradeAttribute", &UAuraAbilitySystemComponent::execServerUpgradeAttribute },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -123,6 +146,55 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientEffectApplied_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AbilityTag_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_AbilityTag;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StatusTag_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_StatusTag;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_AbilityTag_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_AbilityTag = { "AbilityTag", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms, AbilityTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_AbilityTag_MetaData), Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_AbilityTag_MetaData) }; // 2083603574
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_StatusTag_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_StatusTag = { "StatusTag", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms, StatusTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_StatusTag_MetaData), Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_StatusTag_MetaData) }; // 2083603574
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_AbilityTag,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::NewProp_StatusTag,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/AbilitySystem/AuraAbilitySystemComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemComponent, nullptr, "ClientUpdateAbilityStatus", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::PropPointers), sizeof(AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01080CC0, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::PropPointers) < 2048);
+	static_assert(sizeof(AuraAbilitySystemComponent_eventClientUpdateAbilityStatus_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -186,6 +258,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UAuraAbilitySystemComponent_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAuraAbilitySystemComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientEffectApplied, "ClientEffectApplied" }, // 2481925008
+		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus, "ClientUpdateAbilityStatus" }, // 2933384894
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerUpgradeAttribute, "ServerUpgradeAttribute" }, // 3411248213
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UAuraAbilitySystemComponent_Statics::FuncInfo) < 2048);
@@ -237,9 +310,9 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UAuraAbilitySystemComponent, UAuraAbilitySystemComponent::StaticClass, TEXT("UAuraAbilitySystemComponent"), &Z_Registration_Info_UClass_UAuraAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemComponent), 3915160050U) },
+		{ Z_Construct_UClass_UAuraAbilitySystemComponent, UAuraAbilitySystemComponent::StaticClass, TEXT("UAuraAbilitySystemComponent"), &Z_Registration_Info_UClass_UAuraAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemComponent), 1176462301U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_2583159567(TEXT("/Script/Aura"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_2641698406(TEXT("/Script/Aura"),
 		Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
