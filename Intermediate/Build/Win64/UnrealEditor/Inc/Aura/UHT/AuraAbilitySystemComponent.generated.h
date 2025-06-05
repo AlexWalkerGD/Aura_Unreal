@@ -22,12 +22,14 @@ struct FGameplayTag;
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_20_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_20_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void ClientUpdateAbilityStatus_Implementation(FGameplayTag const& AbilityTag, FGameplayTag const& StatusTag); \
+	virtual void ClientUpdateAbilityStatus_Implementation(FGameplayTag const& AbilityTag, FGameplayTag const& StatusTag, int32 AbilityLevel); \
 	virtual void ClientEffectApplied_Implementation(UAbilitySystemComponent* AbilitySystemComponent, FGameplayEffectSpec const& EffectSpec, FActiveGameplayEffectHandle ActiveEffectHandle); \
+	virtual void ServerSpendSpellPoint_Implementation(FGameplayTag const& AbilityTag); \
 	virtual void ServerUpgradeAttribute_Implementation(FGameplayTag const& AttributeTag); \
  \
 	DECLARE_FUNCTION(execClientUpdateAbilityStatus); \
 	DECLARE_FUNCTION(execClientEffectApplied); \
+	DECLARE_FUNCTION(execServerSpendSpellPoint); \
 	DECLARE_FUNCTION(execServerUpgradeAttribute);
 
 
