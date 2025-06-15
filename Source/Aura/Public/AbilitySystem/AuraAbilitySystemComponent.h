@@ -49,6 +49,8 @@ public:
 	void ServerSpendSpellPoint(const FGameplayTag& AbilityTag);
 
 	void UpdateAbilityStatuses(int32 Level);
+
+	bool GetDescriptionsByAbilityTag(const FGameplayTag& AbilityTag, FString& OutDescription, FString& OutNextLevelDescription);
 	
 protected:
 
