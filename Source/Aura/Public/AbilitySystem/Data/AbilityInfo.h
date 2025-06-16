@@ -20,6 +20,9 @@ struct FAuraAbilityInfo
 	UPROPERTY(BlueprintReadOnly)
 	FGameplayTag InputTag = FGameplayTag();
 
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly)
+	FGameplayTag AbilityType = FGameplayTag();
+
 	UPROPERTY(BlueprintReadOnly)
 	FGameplayTag StatusTag = FGameplayTag();
 

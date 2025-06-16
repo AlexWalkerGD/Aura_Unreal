@@ -91,6 +91,14 @@ void USpellMenuWidgetController::SpendPointButtonPressed()
 	}
 }
 
+void USpellMenuWidgetController::EquipButtonPressed()
+{
+	const FGameplayTag AbilityType = AbilityInfo->FindAbilityInfoForTag(SelectedAbility.Ability).AbilityType;
+
+	WaitForEquipDelegate.Broadcast(AbilityType);
+	bWaitingEquipSelection = true;
+}
+
 void USpellMenuWidgetController::ShouldEnabledButtons(const FGameplayTag& AbilityStatus, int32 SpellPoints,bool& bShouldEnabledSpellPointsButton, bool& bShouldEnabledEquipButton)
 {
 	const FAuraGameplayTags GameplayTags = FAuraGameplayTags::Get();
