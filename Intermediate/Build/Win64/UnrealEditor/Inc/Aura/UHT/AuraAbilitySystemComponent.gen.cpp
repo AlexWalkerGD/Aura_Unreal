@@ -41,6 +41,15 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		P_THIS->ClientEffectApplied_Implementation(Z_Param_AbilitySystemComponent,Z_Param_EffectSpec,Z_Param_ActiveEffectHandle);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(UAuraAbilitySystemComponent::execServerEquipAbility)
+	{
+		P_GET_STRUCT(FGameplayTag,Z_Param_AbilityTag);
+		P_GET_STRUCT(FGameplayTag,Z_Param_Slot);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ServerEquipAbility_Implementation(Z_Param_AbilityTag,Z_Param_Slot);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(UAuraAbilitySystemComponent::execServerSpendSpellPoint)
 	{
 		P_GET_STRUCT(FGameplayTag,Z_Param_AbilityTag);
@@ -69,6 +78,11 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		FGameplayTag StatusTag;
 		int32 AbilityLevel;
 	};
+	struct AuraAbilitySystemComponent_eventServerEquipAbility_Parms
+	{
+		FGameplayTag AbilityTag;
+		FGameplayTag Slot;
+	};
 	struct AuraAbilitySystemComponent_eventServerSpendSpellPoint_Parms
 	{
 		FGameplayTag AbilityTag;
@@ -95,6 +109,14 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		Parms.AbilityLevel=AbilityLevel;
 		ProcessEvent(FindFunctionChecked(NAME_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus),&Parms);
 	}
+	static FName NAME_UAuraAbilitySystemComponent_ServerEquipAbility = FName(TEXT("ServerEquipAbility"));
+	void UAuraAbilitySystemComponent::ServerEquipAbility(FGameplayTag const& AbilityTag, FGameplayTag const& Slot)
+	{
+		AuraAbilitySystemComponent_eventServerEquipAbility_Parms Parms;
+		Parms.AbilityTag=AbilityTag;
+		Parms.Slot=Slot;
+		ProcessEvent(FindFunctionChecked(NAME_UAuraAbilitySystemComponent_ServerEquipAbility),&Parms);
+	}
 	static FName NAME_UAuraAbilitySystemComponent_ServerSpendSpellPoint = FName(TEXT("ServerSpendSpellPoint"));
 	void UAuraAbilitySystemComponent::ServerSpendSpellPoint(FGameplayTag const& AbilityTag)
 	{
@@ -115,6 +137,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ClientEffectApplied", &UAuraAbilitySystemComponent::execClientEffectApplied },
 			{ "ClientUpdateAbilityStatus", &UAuraAbilitySystemComponent::execClientUpdateAbilityStatus },
+			{ "ServerEquipAbility", &UAuraAbilitySystemComponent::execServerEquipAbility },
 			{ "ServerSpendSpellPoint", &UAuraAbilitySystemComponent::execServerSpendSpellPoint },
 			{ "ServerUpgradeAttribute", &UAuraAbilitySystemComponent::execServerUpgradeAttribute },
 		};
@@ -224,6 +247,55 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AbilityTag_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_AbilityTag;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Slot_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_Slot;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_AbilityTag_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_AbilityTag = { "AbilityTag", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemComponent_eventServerEquipAbility_Parms, AbilityTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_AbilityTag_MetaData), Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_AbilityTag_MetaData) }; // 2083603574
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_Slot_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_Slot = { "Slot", nullptr, (EPropertyFlags)0x0010000008000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemComponent_eventServerEquipAbility_Parms, Slot), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_Slot_MetaData), Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_Slot_MetaData) }; // 2083603574
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_AbilityTag,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::NewProp_Slot,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/AbilitySystem/AuraAbilitySystemComponent.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemComponent, nullptr, "ServerEquipAbility", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::PropPointers), sizeof(AuraAbilitySystemComponent_eventServerEquipAbility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00220CC0, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::PropPointers) < 2048);
+	static_assert(sizeof(AuraAbilitySystemComponent_eventServerEquipAbility_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerSpendSpellPoint_Statics
 	{
 #if WITH_METADATA
@@ -323,6 +395,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UAuraAbilitySystemComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientEffectApplied, "ClientEffectApplied" }, // 2481925008
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ClientUpdateAbilityStatus, "ClientUpdateAbilityStatus" }, // 27772843
+		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerEquipAbility, "ServerEquipAbility" }, // 4106127883
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerSpendSpellPoint, "ServerSpendSpellPoint" }, // 2474142463
 		{ &Z_Construct_UFunction_UAuraAbilitySystemComponent_ServerUpgradeAttribute, "ServerUpgradeAttribute" }, // 3411248213
 	};
@@ -375,9 +448,9 @@ void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UAuraAbilitySystemComponent, UAuraAbilitySystemComponent::StaticClass, TEXT("UAuraAbilitySystemComponent"), &Z_Registration_Info_UClass_UAuraAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemComponent), 2099736425U) },
+		{ Z_Construct_UClass_UAuraAbilitySystemComponent, UAuraAbilitySystemComponent::StaticClass, TEXT("UAuraAbilitySystemComponent"), &Z_Registration_Info_UClass_UAuraAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemComponent), 996322800U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_4238017991(TEXT("/Script/Aura"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_2201903711(TEXT("/Script/Aura"),
 		Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_alexw_Documents_Unreal_Projects_Aura_Source_Aura_Public_AbilitySystem_AuraAbilitySystemComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
