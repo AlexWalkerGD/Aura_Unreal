@@ -50,7 +50,7 @@ public:
 	static bool IsCriticalHit(const FGameplayEffectContextHandle& EffectContextHandle);
 
 	UFUNCTION(BlueprintPure, Category = "AbilitySystem|GameplayEffects")
-	static bool IsSuccessfulDamage(const FGameplayEffectContextHandle& EffectContextHandle);
+	static bool IsSuccessfulDebuff(const FGameplayEffectContextHandle& EffectContextHandle);
 
 	UFUNCTION(BlueprintPure, Category = "AbilitySystem|GameplayEffects")
 	static float GetDebuffDamage(const FGameplayEffectContextHandle& EffectContextHandle);
@@ -70,6 +70,21 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
 	static void SetIsCriticalHit(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, bool bInIsCriticalHit);
 
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
+	static void SetIsSuccessfulDebuff(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, bool bInSuccessfulDebuff);
+
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
+	static void SetDebuffDamage(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, float InDamage);
+
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
+	static void SetDebuffDuration(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, float InDuration);
+
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
+	static void SetDebuffFrequency(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, float InFrequency);
+
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayEffects")
+	static void SetDamageType(UPARAM(ref) FGameplayEffectContextHandle& EffectContextHandle, const FGameplayTag& InDamageType);
+	
 	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayMechanics")
 	static void GetLivePlayersWithinRadius(const UObject* WorldContextObject, TArray<AActor*>& OutOverlappingActors, const TArray<AActor*>& ActorsToIgnore, float Radius, const FVector& SphereOrigin);
 
@@ -81,3 +96,5 @@ public:
 
 	static int32 GetXPRewardForClassAndLevel(const UObject* WorldContextObject, ECharacterClass CharacterClass, int32 CharacterLevel);
 };
+
+
