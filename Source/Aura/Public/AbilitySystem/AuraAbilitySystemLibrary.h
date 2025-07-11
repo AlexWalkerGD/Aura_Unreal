@@ -94,6 +94,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|DamageEffect")
 	static FGameplayEffectContextHandle ApplyDamageEffect(const FDamageEffectParams& DamageEffectParams);
 
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayMechanics")
+	static TArray<FRotator> EventlySpacedRotators(const FVector& Forward, const FVector& Axis, float Spread, int32 NumRotators);
+
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem|GameplayMechanics")
+	static TArray<FVector> EventlyRotatedVectors(const FVector& Forward, const FVector& Axis, float Spread, int32 NumVectors);	
+
 	static int32 GetXPRewardForClassAndLevel(const UObject* WorldContextObject, ECharacterClass CharacterClass, int32 CharacterLevel);
 };
 
