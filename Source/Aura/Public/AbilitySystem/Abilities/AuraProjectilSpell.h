@@ -29,4 +29,6 @@ protected:
 	TSubclassOf<AAuraProjectile> ProjectileClass;
 
 	int32 NumProjectiles = 5 ;
+
+
 };
