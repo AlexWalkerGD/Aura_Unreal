@@ -24,6 +24,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void TraceFirstTarget(const FVector& BeamTargetLocation);
+
+	UFUNCTION(BlueprintCallable)
+	void StoreAdditionalTargets(TArray<AActor*>& OutAdditionalTargets);
 	
 protected:
 
