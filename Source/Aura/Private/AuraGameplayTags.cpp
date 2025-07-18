@@ -185,7 +185,19 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 
 	GameplayTags.Abilities_Lightning_Eletrocute = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Lightning.Eletrocute"), FString("Eletrocute Ability Tag"));
+
+	//Passive Spells
+
+	GameplayTags.Abilities_Passive_LifeSiphon = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Abilities.Passive.LifeSiphon"), FString("Life Siphon"));
+
+	GameplayTags.Abilities_Passive_ManaSiphon = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Abilities.Passive.ManaSiphon"), FString("Mana Siphon"));
+
+	GameplayTags.Abilities_Passive_HaloOfProtection = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Abilities.Passive.HaloOfProtection"), FString("Halo Of Protection"));
 	
+	// Status
 		
 	GameplayTags.Abilities_Status_Eligible = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Status.Eligible"), FString("Eligible Status"));
@@ -198,6 +210,8 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 	
 	GameplayTags.Abilities_Status_Equipped = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Status.Equipped"), FString("Equipped Status"));
+
+	// Abilities Type
 
 	GameplayTags.Abilities_Type_None = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Abilities.Type.None"), FString("Type None"));

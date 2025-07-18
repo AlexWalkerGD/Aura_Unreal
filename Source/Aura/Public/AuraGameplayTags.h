@@ -74,6 +74,10 @@ public:
 	FGameplayTag Abilities_Type_Passive;
 	FGameplayTag Abilities_Type_Offensive;
 
+	FGameplayTag Abilities_Passive_LifeSiphon;
+	FGameplayTag Abilities_Passive_ManaSiphon;
+	FGameplayTag Abilities_Passive_HaloOfProtection;
+
 	FGameplayTag Cooldown_Fire_FireBolt;
 
 	FGameplayTag CombatSocket_Weapon;
