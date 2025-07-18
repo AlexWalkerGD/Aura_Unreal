@@ -38,7 +38,7 @@ void AAuraProjectile::BeginPlay()
 	Super::BeginPlay();
 	SetLifeSpan(LifeSpan);
 	Sphere->OnComponentBeginOverlap.AddDynamic(this, &AAuraProjectile::OnSphereOverlap);
-
+	SetReplicateMovement(true);
 	LoopingAudio = UGameplayStatics::SpawnSoundAttached(LoppingSound,GetRootComponent());
 	
 }
