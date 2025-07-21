@@ -3,7 +3,7 @@
 
 #include "AbilitySystem/AuraAbilitySystemLibrary.h"
 
-#include "ABilitySystemBlueprintLibrary.h"
+#include "AbilitySystemBlueprintLibrary.h"
 #include "AuraAbilityTypes.h"
 #include "AuraGameplayTags.h"
 #include "AbilitySystem/Data/CharacterClassInfo.h"
