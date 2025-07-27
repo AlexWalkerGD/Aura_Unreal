@@ -8,6 +8,7 @@
 #include "GameFramework/Character.h"
 #include "Interact/CombatInterface.h"
 #include "AbilitySystem/Data/CharacterClassInfo.h"
+#include "AbilitySystem/Passive/PassiveNiagaraComponent.h"
 #include "AuraCharacterBase.generated.h"
 
 class UNiagaraSystem;
@@ -64,7 +65,7 @@ public:
 	
 
 protected:
-	
+	virtual void Tick(float DeltaSeconds) override;
 	virtual void BeginPlay() override;
 
 	bool bDead = false;
@@ -145,6 +146,18 @@ private:
 
 	UPROPERTY(EditAnywhere, Category="Combat")
 	TObjectPtr<UAnimMontage> HitReactMontage;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UPassiveNiagaraComponent> HaloOfProtectionNiagaraComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UPassiveNiagaraComponent> LifeSiphonNiagaraComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UPassiveNiagaraComponent> ManaSiphonNiagaraComponent;
+
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<USceneComponent> EffectAttachComponent;
 	
 	
 };

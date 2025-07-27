@@ -252,12 +252,13 @@ void UAuraAttributeSet::Debuff(const FEffectProperties& Props)
 
 void UAuraAttributeSet::HandleIncomingXP(const FEffectProperties& Props)
 {
+
+	
 	const float LocalIncomingXP = GetIncomingXP();
 	SetIncomingXP(0.f);
 
 	if(Props.SourceCharacter->Implements<UPlayerInterface>() && Props.SourceCharacter->Implements<UCombatInterface>())
 	{
-
 		const int32 CurrentLevel = ICombatInterface::Execute_GetPlayerLevel(Props.SourceCharacter);
 		const int32 CurrentXP = IPlayerInterface::Execute_GetXP(Props.SourceCharacter);
 
@@ -275,8 +276,7 @@ void UAuraAttributeSet::HandleIncomingXP(const FEffectProperties& Props)
 				SpellPointsReward += IPlayerInterface::Execute_GetSpellPointsReward(Props.SourceCharacter, CurrentLevel + i);
 				AttributePointsReward += IPlayerInterface::Execute_GetAttributePointsReward(Props.SourceCharacter, CurrentLevel + i);
 			}
-
-			IPlayerInterface::Execute_AddToPlayerLevel(Props.SourceCharacter, NumLevelUps);
+			
 			IPlayerInterface::Execute_AddToAttributePoints(Props.SourceCharacter,AttributePointsReward);
 			IPlayerInterface::Execute_AddToSpellPoints(Props.SourceCharacter, SpellPointsReward);
 				
