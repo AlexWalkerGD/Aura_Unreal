@@ -9,6 +9,7 @@
 #include "GameplayTagContainer.h"
 #include "AuraPlayerController.generated.h"
 
+class AMagicCircle;
 class UNiagaraSystem;
 class UDamageTextComponent;
 class USplineComponent;
@@ -36,6 +37,12 @@ protected:
 	
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
+
+	UFUNCTION(BlueprintCallable)
+	void ShowMagicCircle();
+
+	UFUNCTION(BlueprintCallable)
+	void HideMagicCircle();
 	
 private:
 	
@@ -55,6 +62,8 @@ private:
 	
 	void Move(const FInputActionValue& InputActionValue);
 	void CursorTrace();
+
+	void UpdateMagicCircleLocation();
 
 	TScriptInterface<IEnemyInterface> LastActor;
 	TScriptInterface<IEnemyInterface> ThisActor;
@@ -92,4 +101,11 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<UDamageTextComponent> DamageTextComponentClass;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AMagicCircle> MagicCircleClass;
+
+	UPROPERTY()
+	TObjectPtr<AMagicCircle> MagicCircle;
+	
 };
